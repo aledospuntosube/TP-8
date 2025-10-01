@@ -1,0 +1,93 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+  background: #f8f9fa;
+  color: #333;
+}
+
+header {
+  background: #4a90e2;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem;
+}
+
+.menu a:hover {
+  background: #2c3e50;
+  border-radius: 5px;
+}
+
+.hero {
+  padding: 2rem;
+  text-align: center;
+}
+
+.resaltado {
+  color: #e74c3c; /* inline (span) justifica destacar sin romper la línea */
+}
+
+.tarjetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.tarjeta {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+}
+
+.tarjeta--destacada {
+  background: #ffeaa7;
+  border: 2px solid #fdcb6e;
+}
+
+
+p {
+  font-size: 1rem;
+}
+.tarjeta p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #4a90e2;
+  color: white;
+  margin-top: 2rem;
+}
+
+
+@media (max-width: 600px) {
+  .menu {
+    flex-direction: column;
+    align-items: center;
+  }
+}
